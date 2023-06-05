@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonCorto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="CORTO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="LARGO"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCorto"
+        app:layout_constraintStart_toStartOf="@+id/buttonCorto"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCorto" />
+
+    <Button
+        android:id="@+id/buttonIndefinido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="INDEFINIDO"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLargo"
+        app:layout_constraintStart_toStartOf="@+id/buttonLargo"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLargo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
